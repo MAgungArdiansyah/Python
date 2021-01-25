@@ -1,0 +1,7 @@
+uang = 500000
+bonus = 1.1
+print('hasil ', + uang * bonus ** 6)
+
+a = 3
+b = 2
+print(a+b)
