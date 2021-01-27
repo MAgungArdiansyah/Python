@@ -33,10 +33,28 @@ while i == 1:
     pilihan = int(input('Silahkan Masukan Pilihan Anda: '))
     if pilihan == 1:
         persegi()
+        print('''
+        Apakah anda ingin mencoba kembali?
+        1. Iya
+        2. Tidak
+        ''')
+        i = int(input('Masukan Nomor Pilihan Anda: '))
     elif pilihan == 2:
         segitiga()
+        print('''
+        Apakah anda ingin mencoba kembali?
+        1. Iya
+        2. Tidak
+        ''')
+        i = int(input('Masukan Nomor Pilihan Anda: '))
     elif pilihan == 3:
         PersegiPanjang()
+        print('''
+        Apakah anda ingin mencoba kembali?
+        1. Iya
+        2. Tidak
+        ''')
+        i = int(input('Masukan Nomor Pilihan Anda: '))
     elif pilihan == 4:
         i = 0
     else:
