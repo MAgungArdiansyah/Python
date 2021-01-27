@@ -1,0 +1,14 @@
+class kalkulator:
+    # belajar OOP pertama python euy mangat bro wkwkwk
+    a = 123
+
+    def test(self):
+        return 'hello world'
+
+print(kalkulator.a)
+print(kalkulator.test)
+kalkulator.a = 456
+print(kalkulator.a)
+
+# membuat object
+k = kalkulator()
