@@ -1,5 +1,6 @@
 i = 1
 while i == 1:
+    print('\n')
     print('Selamat Datang di Hotel Agung Tower')
     print('Moto kami : Anda nyaman kami senang :)')
     print('Silahkan pilih kamar yang anda sukai')
@@ -43,37 +44,36 @@ while i == 1:
             biaya = lamaMenginap*356500
             print('Total Biaya Menginap : ', biaya)
             pembayaran = int(input('Silahkan masukan uang anda: '))
-            a = 1
-            while a == 1:
-                if pembayaran >= biaya:
-                    print('Uang anda: ', pembayaran)
-                    print('Kembalian: ', pembayaran - biaya)
-                    print('Terimakasih telah melakukan pemesanan')
-                    print('Apakah anda ingin mengulangi proses pemesanan?')
-                    print(
-                        '''
-                        1. Ya
-                        2. Tidak
-                        '''
+            if pembayaran >= biaya:
+                print('Uang anda: ', pembayaran)
+                print('Kembalian: ', pembayaran - biaya)
+                print('Terimakasih telah melakukan pemesanan')
+                print('Apakah anda ingin mengulangi proses pemesanan?')
+                print(
+                    '''
+                    1. Ya
+                    2. Tidak
+                    '''
                     )
-                    jawaban = int(input('Silahkan masukan nomor pilihan anda: '))
-                    if jawaban == 1:
-                        i = 1
-                    else:
-                        i = 0
+                jawaban = int(input('Silahkan masukan nomor pilihan anda: '))
+                if jawaban == 1:
+                    i = 1
                 else:
-                    print('Apakah anda ingin mengulangi proses pemesanan?')
-                    print(
-                        '''
-                        1. Ya
-                        2. Tidak
-                        '''
+                    i = 0
+            else:
+                print('Mohon maaf uang yang nada masukan tidak mencu')
+                print('Apakah anda ingin mengulangi proses pemesanan?')
+                print(
+                    '''
+                    1. Ya
+                    2. Tidak
+                    '''
                     )
-                    jawaban = int(input('Silahkan masukan nomor pilihan anda: '))
-                    if jawaban == 1:
-                        i = 1
-                    else:
-                        i = 0
+                jawaban = int(input('Silahkan masukan nomor pilihan anda: '))
+                if jawaban == 1:
+                    i = 1
+                else:
+                    i = 0
         elif pesan == 2:
             i = 1
         else:
@@ -139,6 +139,7 @@ while i == 1:
                 else:
                     i = 0
             else:
+                print('Mohon maaf uang yang anda masukan tidak mencukupi')
                 print('Apakah anda ingin mengulangi proses pemesanan?')
                 print(
                     '''
@@ -219,6 +220,7 @@ while i == 1:
                 else:
                     i = 0
             else:
+                print('Mohon maaf uang yang anda masukan tidak mencukupi')
                 print('Apakah anda ingin mengulangi proses pemesanan?')
                 print(
                     '''
@@ -250,6 +252,7 @@ while i == 1:
     elif pilihan == 4:
         i = 0
     else:
+        print('Pilihan yang anda masukan tidak tersedia')
         print('Apakah anda ingin mengulangi proses pemesanan?')
         print(
             '''
