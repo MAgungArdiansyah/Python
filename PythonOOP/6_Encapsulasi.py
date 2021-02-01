@@ -26,7 +26,7 @@ class Hero:
 
 
 # awal game sao
-kirito = Hero('Kirito', 300, 100)
+kirito =   Hero('Kirito', 300, 100)
 
 # game berjalan
 print(kirito.getName())
