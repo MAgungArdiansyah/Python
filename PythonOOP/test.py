@@ -1,9 +1,9 @@
 class BangunDatar:
     
-    def __init__(self, sisi, panjang, lebar):
-        self._sisi = sisi
-        self._panjang = panjang
-        self._lebar = lebar
+    def __init__(self, x, y, z):
+        self._sisi = x
+        self._panjang = y
+        self._lebar = z
     
     # Sisi
     @property
@@ -44,12 +44,27 @@ class BangunDatar:
     def lebar(self, input):
         self._lebar = input
 
-class Persegi(BangunDatar):
-    def __init__(self):
-        super()._sisi() = 0
-        super().sisi() = 0
+class Kotak(BangunDatar):
+    
+    def Persegi(self):
+        print('Perhitungan Luas & Keliling Persegi')
+        self.sisi = int(input('Masukan Nilai Sisi: '))
+        luas = self.sisi * self.sisi
+        Keliling = self.sisi * 4
+        print('Luas Persegi = ', luas)
+        print('Keliling Persegi = ', Keliling)
+    
+    def PersegiPanjang(self):
+        print('Perhitungan Luas & Keliling Persegi Panjang')
+        self.panjang = int(input('Masukan Nilai Panjang: '))
+        self.lebar = int(input('Masukan Nilai Lebar: '))
+        luas = self.lebar * self.panjang
+        Keliling = (2 * self.panjang) + (2 * self.lebar)
+        print('Luas Persegi Panjang = ', luas)
+        print('Keliling Persegi Panjang = ', Keliling)
 
 
-agung = Persegi()
-agung.sisi = 2
-print(agung.sisi)
+
+persegi = Kotak(0,0,0)
+persegi.Persegi()
+persegi.PersegiPanjang()
