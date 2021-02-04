@@ -45,7 +45,6 @@ class BangunDatar:
         self._lebar = input
 
 class Kotak(BangunDatar):
-    
     def Persegi(self):
         print('Perhitungan Luas & Keliling Persegi')
         self.sisi = int(input('Masukan Nilai Sisi: '))
@@ -64,7 +63,65 @@ class Kotak(BangunDatar):
         print('Keliling Persegi Panjang = ', Keliling)
 
 
-
+# program utama
 persegi = Kotak(0,0,0)
 persegi.Persegi()
 persegi.PersegiPanjang()
+
+# Part 2
+print('')
+print('')
+
+class Mobil:
+    def __init__(self, brand, cc):
+        self._brand = brand
+        self._cc = cc
+    
+    @property
+    def brand(self):
+        pass
+    
+    @brand.getter
+    def brand(self):
+        return self._brand
+    
+    @brand.setter
+    def brand(self, addInput):
+        self._brand = addInput
+    
+    @property
+    def cc(self):
+        pass
+
+    @cc.getter
+    def cc(self):
+        return self._cc
+    
+    @cc.setter
+    def cc(self, addInput):
+        self._cc = addInput
+    
+    def kecepatan(self):
+       return self._cc / 10
+    
+    def WaktuTempuh(self):
+        jarak = int(input('Masukan Jarak Tempuh: '))
+        Total = jarak / self.kecepatan()
+        print('Total Waktu Tempuh : ', Total)
+
+class suzuki(Mobil):
+
+    def __init__(self, brand, cc, tangki):
+        super().__init__(brand, cc)
+        self._tangki = tangki
+        super().WaktuTempuh()
+    
+    @property
+    def tangki(self):
+        pass
+
+suzukiR3 = suzuki('Suzuki',1200,30)
+
+
+
+        
